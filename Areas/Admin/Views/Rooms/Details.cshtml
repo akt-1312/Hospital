@@ -1,0 +1,36 @@
+﻿@model Hospital.Models.Room
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Room</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Room_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Room_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Room_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Room_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Room_cost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Room_cost)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Room_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
